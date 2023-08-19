@@ -1,0 +1,40 @@
+Git (Group Inclusive Tour)
+	Git bisa dikatakan sistem kontrol paling populer di dunia, dimana sistem kontrol ini mencatat perubahan kode yang kita lakukan dari waktu ke waktu dalam database khusus yang disebut dengan repositori. Dalam Git kita juga bisa melihat siapa yang membuat perubahan dan juga riwayat kode yang kita buat . Salah satu keunggulan dalam Git yaitu dimana jika kita melakukan kesalahan atau mengacaukan proyek kita, kita bisa dengan mudah mengembalikan proyek kita ke keadaan semula. Sedangkan kekurangan dari Git yaitu dimana sulit digunakan untuk pengelolaan file biner atau non-teks , seperti gambar atau video.
+	Kontrol sistem Git terbagi menjadi dua kategori yaitu centralized dan distributed.Dalam sistem terpusat semua anggota tim akan terhubung ke server pusat untuk mendapatkan salinan kode terbaru dan untuk berbagi perubahan yang dilakukan dengan yang lain. Kekurangan dari sistem terpusat ini adalah Single Point of Failure dimana jika servernya off maka tim tidak dapat berkolaborasi dengan satu sama lain, sehingga tim harus menunggu hingga server on kembali. Dalam sistem terdistribusi setiap anggota tim memiliki salinan proyek dengan riwayatnya di komputer mereka, sehingga dapat menyimpan snapshot proyek secara lokal di komputer masing masing. Jika server pusat off maka anggota tim tetap bisa menyinkronkan tugas secara langsung dengan yang lainnya. Contoh langsung dalam sistem terdistribusi adalah Git.
+	Git memungkinkan developer untuk melacak perubahan dalam proyek perangkat lunak. Setiap perubahan disimpan sebagai "commit", yang mencakup perubahan spesifik yang dilakukan pada file atau direktori. Konsep dasar Git termasuk repository (repos), commit, branch (cabang), dan merge.
+Beberapa command dasar pada Git yaitu
+1. Git init : untuk inisialisasi repository Git baru
+2. Git clone : untuk kloning repository Git dari sumber yang ada
+3. Git add : untuk menambah file ke indeks Git
+4. Git commit : commit perubahan ke repository Git
+5. Git push : untuk mengupload perubahan ke repository Git yang terhubung
+6. Git pull : Mengunduh perubahan dari repository Git yang terhubung
+7. Git status : melihat status file dalam direktori saat ini
+8. Git log : untuk melihat riwayat perubahan dalam repository
+9. Git diff : untuk melihat perbedaan antara versi saat ini dan versi sebelumnya
+10. Git branch : untuk mengelola cabang (branch) dalam repository Git
+11. Git checkout : untuk mengubah antar cabang atau mengambil versi tertentu
+12. Git merge : untuk menggabungkan cabang atau perubahan ke cabang
+13. Git reset : untuk menghapus perubahan dalam indeks Git
+
+Gitlab 
+	Gitlab merupakan platform berbasis web yang dimna dapat menyimpan repository dan juga menyediakan berbagai alat dan fitur untuk melakukan kolabolrasi, memanajemen kode sumber, pengujian, deployment sebuah perangkat lunak. GitLab memungkinkan untuk bekerja secara timbal balik dalam proyek perangkat lunak, mengelola perubahan kode, dan mengotomatisasi proses pengujian dan pengiriman.
+	Keunggulan yang dimiliki Gitlab seperti pemrosesan CI/CD yang mudah digunakan, memiliki tingkat keamanan yang lebih tinggi dan fitur kolaborasi yang lebih unggul. Sedangkan kekuranngannya yaitu sulit untuk dipelajari pemula, konfigurasi yang di miliki cukup rumi dan tidak gratis sepenuhnya.
+
+Github
+	Github merupakan manajemen project, sistem versioning code dan juga platform bagi para developer di seluruh dunia. Github ini terintegrasi dengan layanan seperti amazon, Google Cloud dan code climate, dimana github dapat menampung sintaks dari 200 bahasa pemrograman yang tidak sama.
+	Keunggulan dari Github dimana ia gratis digunakan, lalu proyek atau kode kita bisa diakses oleh pengguna lain, selain itu github juga bisa melacak perubahan yang terjadi di change log dan Github juga mampu mengintegrasikan development IDE. Sedangkan kekurangan github yaitu dimana keamanan di github tidak berlaku untuk repositori pribadi, memerlukan koneksi internet yang stabil untuk mengakses github dan pengguna harus membayar untuk menggunakan repositori pribadi dalam jumlah yang besar.
+Perbedaan antara Github dan Gitlab
+1. Github fokus pada kolaborasi open source dengan fitur seperti tinjauan kode, diskusi, permintaan tarik (pull requests), sedangkan Gitlab Menawarkan fitur serupa untuk kolaborasi, termasuk tinjauan kode, komentar pada baris kode, serta kesempatan untuk berkontribusi pada repositori
+2. Pada Github kita dapat melihat riwayat jika seseorang mengubah kode sedangkan Gitlub sama seperti github hanya saja Gitlab juga juga memiliki alat untuk mengecek apakah perubahan-perubahan itu baik atau tidak.
+3. Dalam Github banyak orang dapat menulis dan mengedit didalamnya, sedangkan Gitlab lebih terstruktur dimana kita dapat melihat siapa yang sedang melakukan apa dan bekerjasama untuk menulis bagian yang berbeda.
+
+
+CI/CD
+	CI merupakan praktik menggabungkan perubahan kode dari berbagai developer ke repositori secara otomatis dan melakukan pengujian otomatis untuk mendeteksi masalah lebih awal dalam pengembangan. CD merupakan praktik yang dilakukan setelah proses CI selesai dan seluruh kode terintegrasi sehingga aplikasi bisa dibangun lalu dirilis secara otomatis. Manfaat dari CI/CD adalah dimaana mendapat feedback lebih cepat, dapat mendeteksi bug lebih awal dan mempercepat proses rilis suatu software
+Proses CI/CD yaitu;
+CI (Continuous Integration) -> CD (Continuous Delivery) -> CD (Continuous Deployment)
+Tools yang sering digunakan dalam CI/CD yaitu seperti Gitlab CI/CD, Github Actions, Jenkins, CircleCI, dan AWS Codebuild.
+
+Dokumentasi
+	Dalam Git terdapat dua fitur untuk memudahkan mengelola dokumentasi yaitu Issue dan Wiki. Issue dalam Git adalah alat untuk melacak masalah, perbaikan, atau tugas yang perlu diselesaikan dalam proyek, selain itu  Issue membantu tim dalam mengatur dan memprioritaskan pekerjaan yang perlu dilakukan. Sedangkan Wiki dalam Git adalah tempat untuk membuat dan berbagi dokumentasi proyek. Wiki merupakan ruang yang dapat diakses oleh anggota tim untuk menjelaskan konsep, panduan, petunjuk, atau informasi lain yang diperlukan untuk memahami atau berkontribusi pada proyek. Wiki sangat membantu dalam berbagi pengetahuan dan memastikan semua orang memiliki panduan yang sama tentang bagaimana proyek berfungsi dan cara berkontribusi.
